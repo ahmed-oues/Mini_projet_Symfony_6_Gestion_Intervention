@@ -1,0 +1,9 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block body %}
+<h2 style=" font-family: Copperplate, Papyrus">➕ Ajouter un client </h2>
+
+{{form_start(f)}} <br>
+{{form_widget(f)}}<br>
+{{form_end(f)}}
+ <a href="{{path('app_acceuil1')}}"><button style = "position:relative; left:70% " type="submit" class="btn btn-black"> retour</button></a>
+{% endblock %}

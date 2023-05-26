@@ -1,0 +1,18 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block body %}
+<style>
+    p {
+
+  font-weight: bold;
+}
+.hh{
+  background-color:#F7F2ED;
+}
+  </style>
+  <div class="hh">
+<u><h3 style=" font-family: Copperplate, Papyrus" > 📝 Détail du technicien num: #{{technicien.id}}</h3></u> <br> 
+<p style=" font-family: Copperplate, Papyrus">🖊Nom : {{technicien.Nom}} </p>
+<p style=" font-family: Copperplate, Papyrus">🖊 Prenom : {{technicien.prenom}} </p>
+</div>
+ <a href="{{path('app_acceuil3')}}"><button style = "position:relative; left:70% " type="submit" class="btn btn-black"> retour</button></a>
+{% endblock %}

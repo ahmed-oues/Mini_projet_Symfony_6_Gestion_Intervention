@@ -1,0 +1,52 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block title %}Hello gestionController!{% endblock %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F6F6F6; padding: 2px 6px; }
+    .btn-outline-warning{ 
+        position:relative;
+          left:20%;
+          }
+          body{
+              background-color: #F2E9E2;
+          }
+</style>
+<u><h2 style="font-family:Georgia,serif;">📝 Liste des techniciens :  |</h2></u><br>
+{% for msg in app.flashes('notice') %}
+<div class="alert alert-success">
+    {{msg}}
+    </div>   
+{% endfor %}
+<table class="table table-hover table-striped" border="2">
+<thead>
+<tr>
+<th>🆔 id</th>
+<th> 🖊nom</th>
+<th>🖊prenom</th>
+</tr>
+</thead>
+<tbody>
+{% for technicien in lesTechniciens %}
+<tr>
+<td>{{technicien.id}}</td>
+<td>{{technicien.nom}}</td>
+<td>{{technicien.prenom}}</td>
+<td>
+<td>
+<a class="btn btn-outline-secondary" href="{{path('gestion_voir33', {'id':technicien.id})}}">🔎Voir</a>
+
+
+</tr>
+</td>
+{% else %}
+<tr>
+<td colspan="5">Aucun technicien</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+<br><br>
+
+{% endblock %}

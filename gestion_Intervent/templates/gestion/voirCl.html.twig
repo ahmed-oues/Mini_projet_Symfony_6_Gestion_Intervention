@@ -1,0 +1,21 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block body %}
+<style>
+    p {
+
+  font-weight: bold;
+}
+.hh{
+  background-color:#F2E9E2;
+}
+  </style>
+  <div class="hh">
+<u><h3 style=" font-family: Copperplate, Papyrus" >📝 Détail du client num: #{{client.id}}</h3></u> <br> 
+<p style=" font-family: Copperplate, Papyrus">🔢Codeclt : {{client.codeclt}} </p>
+<p style=" font-family: Copperplate, Papyrus">🖊Nom : {{client.nom}} </p>
+<p style=" font-family: Copperplate, Papyrus">🖊Prenom : {{client.prenom}}</p>
+<p style=" font-family: Copperplate, Papyrus">🖊Adresse : {{client.adresse}}</p>
+<p style=" font-family: Copperplate, Papyrus">🔖CP {{client.cp}}</p>
+</div>
+ <a href="{{path('app_acceuil1')}}"><button style = "position:relative; left:70% " type="submit" class="btn btn-black"> retour</button></a>
+{% endblock %}

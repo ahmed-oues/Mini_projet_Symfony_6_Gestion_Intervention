@@ -1,0 +1,65 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block title %}Hello gestionController!{% endblock %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F6F6F6; padding: 2px 6px; }
+    .btn-outline-warning{ 
+        position:relative;
+          left:20%;
+          }
+          body{
+              background-color: #F2E9E2;
+          }
+</style>
+<u><h2 style="font-family:Georgia,serif;">📝 Liste des Produits:  |  <small> <a class="btn btn-outline-warning" href="{{path('gestion_ajouter2')}}">📥 Ajouter</a></small><small></h2></u><br>
+{% for msg in app.flashes('notice') %}
+<div class="alert alert-success">
+    {{msg}}
+    </div>   
+{% endfor %}
+<table class="table table-hover table-striped" border="2">
+<thead>
+<tr>
+<th>🆔 id</th>
+<th>🔖designation</th>
+<th> 💰 Prix</th>
+</tr>
+</thead>
+<tbody>
+{% for produit in lesProduits %}
+<tr>
+<td>{{produit.id}}</td>
+<td>{{produit.designation}}</td>
+<td>{{produit.Prix}}</td>
+<td>
+<td>
+<a class="btn btn-outline-secondary" href="{{path('gestion_voir2', {'id':produit.id})}}">🔎Voir</a>
+<a class="btn btn-outline-info"href="{{path('gestion_modifier2', {'id':produit.id})}}">📌Modifier</a>
+<a class="btn btn-outline-danger" href="{{path('gestion_supprimer2', {'id':produit.id})}}">🚫Supprimer</a>
+
+</tr>
+</td>
+{% else %}
+<tr>
+<td colspan="5">Aucun produit</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<script>
+    $(".btn-danger").click(function(){return confirm("Supprimer ?");})
+</script>
+<script>
+   $(".btn-outline-succes").click(function(){Return confirm("Modifier ?");
+   })
+</script>
+<script>
+   $(".btn-outline-succes").click(function(){Return confirm("voir ?");
+   })
+</script>
+<br><br>
+<div align="right">
+<a class="btn btn-outline-success" href="{{path('app_acceuil3')}}">Voir Technicien </a>
+</div>
+{% endblock %}

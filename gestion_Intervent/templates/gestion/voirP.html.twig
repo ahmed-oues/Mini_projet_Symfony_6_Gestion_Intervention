@@ -1,0 +1,18 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block body %}
+<style>
+    p {
+
+  font-weight: bold;
+}
+.hh{
+  background-color:#F7F2ED;
+}
+  </style>
+  <div class="hh">
+<u><h3 style=" font-family: Copperplate, Papyrus" > 📝 Détail du produit num: #{{produit.id}}</h3></u> <br> 
+<p style=" font-family: Copperplate, Papyrus">🔖 designation : {{produit.designation}} </p>
+<p style=" font-family: Copperplate, Papyrus">💰 Prix : {{produit.Prix}} </p>
+</div>
+ <a href="{{path('app_acceuil2')}}"><button style = "position:relative; left:70% " type="submit" class="btn btn-black"> retour</button></a>
+{% endblock %}

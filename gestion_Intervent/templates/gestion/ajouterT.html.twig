@@ -1,0 +1,17 @@
+{% extends 'gestion-layout.html.twig' %}
+{% block body %}
+<style type="text/css">
+  .ass{
+ width: 700px;
+ margin: auto;
+ }
+ </style>
+<h2 style=" font-family: Copperplate, Papyrus">➕ Ajouter un technicien </h2><br>
+<div class="ass">
+<ul style="list-style: none">
+{{form_start(f)}}
+{{form_widget(f)}}
+{{form_end(f)}}
+</div>
+ <a href="{{path('app_acceuil3')}}"><button style = "position:relative; left:70% " type="submit" class="btn btn-black"> retour</button></a>
+{% endblock %}

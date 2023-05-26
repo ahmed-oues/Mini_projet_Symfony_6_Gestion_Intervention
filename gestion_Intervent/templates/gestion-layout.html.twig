@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<title>
+{% block title %}
+TP Symfony #2 : Doctrine &Forms
+{% endblock %}
+</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css ">
+</head>
+<style>
+body{
+    background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/home">Home</a>
+    <a class="navbar-brand" href="gestion1">clients</a>
+    <a class="navbar-brand" href="gestion2">Produits</a>
+    <a class="navbar-brand" href="gestion3">Techniciens</a>
+    <a class="navbar-brand" href="intervention">Intervention</a>
+    <a class="navbar-brand" href="/register">{{ app.user ? '' : 'SignUp' }}</a>
+    <a class="navbar-brand" href="/{{ app.user ? 'logout' : 'login' }}">{{ app.user ? 'Logout' : 'Login' }}</a>
+     
+</nav>
+
+<div class="container"><br><br><br>
+<h1 style="text-align:center; font-family:Georgia,serif;">'Gestion d'Intervention 🔏'</h1><br><br>
+{% block body %} <br>
+{% endblock %}
+</div>
+</body>
+</html>
