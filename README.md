@@ -2,13 +2,7 @@
 
 ## Description
 
-Ce projet consiste à réaliser un mini projet Symfony 6 en utilisant la base de données fournie et en mettant en place les relations entre les tables. Les objectifs du projet sont les suivants :
-
-- Identifier et implémenter les fonctionnalités de base de chaque application, telles que les menus et les formulaires.
-  Exemple : Gérer les étudiants (ajouter, supprimer, modifier, afficher, rechercher, etc.).
-- Proposer un espace administrateur avec des fonctionnalités spécifiques.
-- Proposer un espace utilisateur avec des fonctionnalités spécifiques.
-- Créer une interface conviviale : le site doit être facile à utiliser. Il doit présenter une navigation logique entre les différentes interfaces et offrir des liens suffisants pour une navigation rapide. Le texte doit être compréhensible, visible et lisible.
+Ce projet consiste à réaliser un mini projet Symfony 6 en utilisant la base de données fournie et en mettant en place les relations entre les tables.
 
 Nous allons créer une base de données appelée "Gestion_Intervention" qui permettra de gérer les interventions des techniciens d'une entreprise d'électroménagers. Le schéma de cette base de données est le suivant :
 
