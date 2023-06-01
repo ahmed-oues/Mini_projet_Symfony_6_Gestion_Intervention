@@ -1,4 +1,4 @@
-Réalisez mini projet Symfony 6 avec la base de données proposée, les relations entre les tables ;
+Réalisez mini projet Symfony 5 avec la base de données proposée, les relations entre les tables ;
  Dégager et implémenter les fonctionnalités de base de chaque application (Menu, formulaire,…) ;
 Exemple : Gérer étudiant (Ajout, supprimer, modifier, afficher, Rechercher,..)
  Proposer un espace administrateur qui a des fonctionnalités spécifiques ;
