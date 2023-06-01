@@ -28,8 +28,4 @@ Nous allons créer une base de données appelée "Gestion_Intervention" qui perm
 
 Assurez-vous d'avoir installé Symfony 6 et d'avoir un serveur de base de données compatible.
 
-## Contribuer
-
-Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une demande de pull. Nous serons ravis d'examiner vos contributions.
-
 Merci d'avoir choisi notre projet ! Si vous avez des questions ou besoin d'aide, n'hésitez pas à nous contacter.
